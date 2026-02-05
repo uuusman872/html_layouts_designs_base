@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.focus-gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: 100vh;
+    align-items: center;
+    gap: 200px;
+    padding: 0 calc(50vw - 150px);
+    scrollbar-width: none;
+}
+
+.focus-gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.item { 
+    flex: 0 0 300px;
+    height: 200px;
+    width: 300px;
+    background: linear-gradient(45deg, #fd79a8, #a84393);
+    scroll-snap-align: center;
+    animation: pop-in linear both;
+    animation-timeline: view(x);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+}
+
+@keyframes pop-in {
+    0% {
+        transform: scale(.5) rotate(-10deg);
+        opacity: .3;
+    }
+    50% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(.5) rotate(10deg);
+        opacity: .3;
+    }
+}
