@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tw:build": "npx @tailwindcss/cli -i ./components/Layouts/two_columns_layouts/index.css -o ./components/Layouts/two_columns_layouts/output.css --watch"
+    "tw:build": "npx @tailwindcss/cli -i ./components/Layouts/three_columns_layout/index.css -o ./components/Layouts/three_columns_layout/output.css --watch"
 
   },
   "author": "",
