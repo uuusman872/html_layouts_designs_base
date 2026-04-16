@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Workshop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-sm mb-8">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <h1 class="text-3xl font-bold text-gray-900"> Grid Layout Example</h1>
+            <p class="text-gray-600">Learn different grid patterns and configurations</p>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-6 space-y-12">
+        <section class="">
+            <h1 class="text-2xl font-bold text-gray-900 mb-4">1. Basic 3-Column Grid</h1>
+            <p class="text-gray-600 mb-4"> Simple grid with 3 equal columns </p>
+            <div class="grid grid-cols-3 gap-3">
+                <div class="bg-blue-500 text-white p-6 rounded-lg text-center font-semibold"> Column 1</div>
+                <div class="bg-blue-500 text-white p-6 rounded-lg text-center font-semibold"> Column 2</div>
+                <div class="bg-blue-500 text-white p-6 rounded-lg text-center font-semibold"> Column 3</div>
+            </div>
+        </section>
+
+        <!-- Example 2: 4-Column Grid -->
+        <section>
+            <h1 class="text-2xl font-bold text-gray-900 mb-4"> 2.4-Column Grid</h1>
+            <p> Grid with 4 equal columns </p>
+            <div class="grid grid-cols-4 gap-4">
+                <div class="bg-green-500 text-white p-6 rounded-lg text-center font-semibold">Box 1</div>
+                <div class="bg-green-500 text-white p-6 rounded-lg text-center font-semibold">Box 2</div>
+                <div class="bg-green-500 text-white p-6 rounded-lg text-center font-semibold">Box 3</div>
+                <div class="bg-green-500 text-white p-6 rounded-lg text-center font-semibold">Box 4</div>
+                <div class="bg-green-500 text-white p-6 rounded-lg text-center font-semibold">Box 5</div>
+                <div class="bg-green-500 text-white p-6 rounded-lg text-center font-semibold">Box 6</div>
+                <div class="bg-green-500 text-white p-6 rounded-lg text-center font-semibold">Box 7</div>
+                <div class="bg-green-500 text-white p-6 rounded-lg text-center font-semibold">Box 8</div>
+            </div>
+        </section>
+
+        <!-- Example 3: Responsive Grid -->
+        <section>
+            <h1 class="text-2xl font-bold text-gray-900 mb-4"> 3. Responsive Grid</h1>
+            <p> 1 column on mobile, 2 on tablet, 3 on desktop, 4 on large screens </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-purple-500 text-white p-6 rounded-lg text-center font-semibold">Item 1</div>
+                <div class="bg-purple-500 text-white p-6 rounded-lg text-center font-semibold">Item 2</div>
+                <div class="bg-purple-500 text-white p-6 rounded-lg text-center font-semibold">Item 3</div>
+                <div class="bg-purple-500 text-white p-6 rounded-lg text-center font-semibold">Item 4</div>
+                <div class="bg-purple-500 text-white p-6 rounded-lg text-center font-semibold">Item 5</div>
+                <div class="bg-purple-500 text-white p-6 rounded-lg text-center font-semibold">Item 6</div>
+                <div class="bg-purple-500 text-white p-6 rounded-lg text-center font-semibold">Item 7</div>
+                <div class="bg-purple-500 text-white p-6 rounded-lg text-center font-semibold">Item 8</div>
+            </div>
+        </section>
+
+        <!-- Example 4: Grid with Spanning Columns -->
+        <section>
+            <h1 class="text-2xl font-bold text-gray-900 mb-4"> 4. Grid with Column Spanning </h1>
+            <p>Some items span multiple columns</p>
+            <div class="grid grid-cols-4 gap-4">
+                <div class="col-span-2 bg-red-500 text-white p-6 rounded-lg text-center font-semibold"> Span Column
+                </div>
+                <div class="bg-red-500 text-white p-6 rounded-lg text-center font-semibold">1 Col</div>
+                <div class="bg-red-500 text-white p-6 rounded-lg text-center font-semibold">1 Col</div>
+                <div class="bg-red-500 text-white p-6 rounded-lg text-center font-semibold">1 Col</div>
+                <div class="col-span-3 bg-red-500 text-white p-6 rounded-lg text-center font-semibold">Spans 3 Columns
+                </div>
+                <div class="col-span-4 bg-red-500 text-white p-6 rounded-lg text-center font-semibold">Spans All 4
+                    Columns</div>
+            </div>
+        </section>
+
+        <!-- Example 5: Grid with Row Spanning -->
+        <section>
+            <h1 class="text-2xl font-bold text-gray-900 mb-4"> 5. Grid with Row Spanning </h1>
+            <p>Items can span multiple rows vertically</p>
+            <div class="grid grid-cols-3 grid-rows-4 gap-4">
+                <div
+                    class="row-span-2 bg-yellow-500 text-white p-6 rounded-lg text-center font-semibold flex items-center justify-center">
+                    Spans 2 Rows </div>
+                <div class="bg-yellow-500 text-white p-6 rounded-lg text-center font-semibold">Box</div>
+                <div class="bg-yellow-500 text-white p-6 rounded-lg text-center font-semibold">Box</div>
+                <div class="bg-yellow-500 text-white p-6 rounded-lg text-center font-semibold">Box</div>
+                <div
+                    class="row-span-2 bg-yellow-500 text-white p-6 rounded-lg text-center font-semibold flex items-center justify-center">
+                    Spans 2 Rows</div>
+                <div class="bg-yellow-500 text-white p-6 rounded-lg text-center font-semibold">Box</div>
+                <div class="bg-yellow-500 text-white p-6 rounded-lg text-center font-semibold">Box</div>
+                <div class="bg-yellow-500 text-white p-6 rounded-lg text-center font-semibold">Box</div>
+                <div class="bg-yellow-500 text-white p-6 rounded-lg text-center font-semibold">Box</div>
+                <div class="bg-yellow-500 text-white p-6 rounded-lg text-center font-semibold">Box</div>
+            </div>
+        </section>
+
+        <!-- Example 6: Complex Grid Layout -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">6. Complex Grid Layout</h2>
+            <p class="text-gray-600 mb-4">Combining column and row spans</p>
+            <div class="grid grid-cols-4 grid-rows-3 gap-4">
+                <div
+                    class="col-span-2 row-span-2 bg-indigo-500 text-white p-6 rounded-lg text-center font-semibold flex items-center justify-center">
+                    Featured<br />2x2</div>
+                <div class="bg-indigo-500 text-white p-6 rounded-lg text-center font-semibold">Box</div>
+                <div class="bg-indigo-500 text-white p-6 rounded-lg text-center font-semibold">Box</div>
+                <div class="bg-indigo-500 text-white p-6 rounded-lg text-center font-semibold">Box</div>
+                <div class="bg-indigo-500 text-white p-6 rounded-lg text-center font-semibold">Box</div>
+                <div class="col-span-2 bg-indigo-500 text-white p-6 rounded-lg text-center font-semibold">Spans 2 Cols
+                </div>
+                <div class="col-span-2 bg-indigo-500 text-white p-6 rounded-lg text-center font-semibold">Spans 2 Cols
+                </div>
+            </div>
+        </section>
+
+        <!-- Example 7: Different Gap Sizes -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">7. Different Gap Sizes</h2>
+            <p class="text-gray-600 mb-4">Control spacing between grid items</p>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2"> Small Gap (gap-2)</h3>
+            <div class="grid grid-cols-4 gap-2 mb-6">
+                <div class="bg-pink-500 text-white p-4 rounded text-center text-sm">Box</div>
+                <div class="bg-pink-500 text-white p-4 rounded text-center text-sm">Box</div>
+                <div class="bg-pink-500 text-white p-4 rounded text-center text-sm">Box</div>
+                <div class="bg-pink-500 text-white p-4 rounded text-center text-sm">Box</div>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Large Gap (gap-8)</h3>
+            <div class="grid grid-cols-4 gap-8">
+                <div class="bg-pink-500 text-white p-4 rounded text-center text-sm">Box</div>
+                <div class="bg-pink-500 text-white p-4 rounded text-center text-sm">Box</div>
+                <div class="bg-pink-500 text-white p-4 rounded text-center text-sm">Box</div>
+                <div class="bg-pink-500 text-white p-4 rounded text-center text-sm">Box</div>
+            </div>
+        </section>
+
+        <!-- Example 8: Auto-Fit Grid -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">8. Auto-Fill Grid</h2>
+            <p class="text-gray-600 mb-4">Automatically fits as many columns as possible (resize window to see effect)</p>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4">
+                <div class="bg-teal-500 text-white p-6 rounded-lg text-center font-semibold">Auto</div>
+                <div class="bg-teal-500 text-white p-6 rounded-lg text-center font-semibold">Auto</div>
+                <div class="bg-teal-500 text-white p-6 rounded-lg text-center font-semibold">Auto</div>
+                <div class="bg-teal-500 text-white p-6 rounded-lg text-center font-semibold">Auto</div>
+                <div class="bg-teal-500 text-white p-6 rounded-lg text-center font-semibold">Auto</div>
+            </div>
+        </section>
+
+        <!-- Example 9: Product Grid (Real-world Example) -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">9. Product Grid Example</h2>
+            <p class="text-gray-600 mb-4">A practical e-commerce layout</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="aspect-square bg-gray-300"></div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-900 mb-1">Product Name</h3>
+                        <p class="text-sm text-gray-600 mb-2">Short description</p>
+                        <p class="text-xl font-bold text-blue-600">$99.99</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="aspect-square bg-gray-300"></div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-900 mb-1">Product Name</h3>
+                        <p class="text-sm text-gray-600 mb-2">Short description</p>
+                        <p class="text-xl font-bold text-blue-600">$99.99</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="aspect-square bg-gray-300"></div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-900 mb-1">Product Name</h3>
+                        <p class="text-sm text-gray-600 mb-2">Short description</p>
+                        <p class="text-xl font-bold text-blue-600">$99.99</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="aspect-square bg-gray-300"></div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-900 mb-1">Product Name</h3>
+                        <p class="text-sm text-gray-600 mb-2">Short description</p>
+                        <p class="text-xl font-bold text-blue-600">$99.99</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+</body>
+
+</html>
