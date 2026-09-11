@@ -1,0 +1,41 @@
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #222;
+}
+
+a {
+    text-decoration: none;
+    font-size: 45px;
+    border: 3px solid white;
+    color: white;
+    padding: 40px 80px;
+    letter-spacing: -2px;
+    position: relative;
+    overflow: hidden;
+}
+
+a::before{
+    content: "Yeah !";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #341435;
+    /* z-index: -1; */
+    transform: translateY(-100%);
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+a:hover::before{
+    transform: translateY(0)
+}

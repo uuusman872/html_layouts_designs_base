@@ -1,0 +1,28 @@
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 45px;
+    border: 5px solid #e1332d;
+    color: #e1332d;
+    padding: 40px 80px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    position: relative;
+    transition: font-weight 1s, letter-spacing 1s, border 1s;
+}
+
+
+a:hover{
+    font-weight: 900;
+    letter-spacing: 10px;
+    border: 7px solid #e1332d
+}
